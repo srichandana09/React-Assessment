@@ -8,6 +8,7 @@ interface Props {
   color: string;
   metric: string;
   data: string;
+  measurement: string;
 }
 
 export default function SimpleCard(props: Props) {
@@ -16,7 +17,8 @@ export default function SimpleCard(props: Props) {
       width: 200,
       float: 'left',
       marginLeft: 15,
-      backgroundColor: 'antiquewhite'
+      backgroundColor: 'white',
+      marginBottom: 10
     },
     title: {
       fontSize: 14,
@@ -38,7 +40,7 @@ export default function SimpleCard(props: Props) {
           {props.metric}
         </Typography>
         <Typography className={classes.metric} variant="h5" component="h5">
-          {props.data}
+          {props.data} {props.measurement}
         </Typography>
       </CardContent>
     </Card>

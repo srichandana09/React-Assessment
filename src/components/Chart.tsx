@@ -13,9 +13,6 @@ export default (props: { data: Plotly.Data[] }) => {
   const classes = useStyles();
   const { data } = props;
 
-  //workaround for limitation with Plotly - it was unable to display pressure and injValveOpen
-  //together without having temperature present.  This checks for if the user has passed actual temperature data to the
-  //chart, rather than just the dummy object.
   const tempPresent = data.filter(node => node.yaxis === 'y').length > 1;
 
   if (data.length > 1) {
