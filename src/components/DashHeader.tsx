@@ -23,15 +23,18 @@ export default (props: {
     <CardContent className={classes.taskBar}>
       <Grid container spacing={4} justify="space-between">
         <Grid item xs={12} sm={6}>
-          {/*render a tag displaying latest data for each selected metric*/}
+          {
+          }
           {latestData.map(measurement => {
             return selection.includes(measurement.metric) ? (
-              <Card metric={measurement.metric} data={measurement.value.toString()} color={'antique white'} />
+              <Card metric={measurement.metric} data={measurement.value.toString()} 
+              measurement={measurement.unit} color={'antique white'} />
             ) : null;
           })}
         </Grid>
         <Grid item xs={12} sm={6}>
-          {/*render a select box that will set the selection object in Dashboard state*/}
+          {
+          }
           <SelectBox metrics={metrics} selection={selection} setSelection={setSelection} />
         </Grid>
       </Grid>
