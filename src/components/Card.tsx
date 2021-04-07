@@ -17,7 +17,7 @@ export default function SimpleCard(props: Props) {
       width: 200,
       float: 'left',
       marginLeft: 15,
-      backgroundColor: 'white',
+      backgroundColor: 'silver',
       marginBottom: 10
     },
     title: {

@@ -7,7 +7,7 @@ import Card from './Card';
 
 const useStyles = makeStyles({
   taskBar: {
-    backgroundColor: 'silver',
+    backgroundColor: 'white',
   },
 });
 
